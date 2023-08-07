@@ -1,4 +1,5 @@
 # <img src="logo.png" alt="Logo" width="40" height="40"> Susenmus Ecommerce Website
+![Susenmus Logo](https://susenmus.kmaa.be/logo.png)
 
 Welcome to the Susenmus Ecommerce Website! This project is built with Laravel and aims to provide users with a seamless shopping experience and a wide range of products to choose from.
 
