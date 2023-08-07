@@ -1,0 +1,118 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+[x-cloak] {
+    display: none;
+}
+
+/* Preloader styles */
+.preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.2);
+    z-index: 9999;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.preloader.active {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.preloader-inner {
+    width: 64px;
+    height: 64px;
+    border: 4px solid #558cf5;
+    border-top-color: transparent;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* custom settings */
+
+.container {
+    max-width: 1110px !important;
+}
+
+.collection {
+    position: relative;
+    text-align: center;
+}
+
+.collection__heading {
+    position: relative;
+    padding-bottom: 1.5rem;
+    font-size: 2.25rem;
+    line-height: 4.5rem;
+    color: #83888f;
+    display: block;
+    z-index: -999;
+}
+
+@media (min-width: 48rem) {
+    .collection__heading {
+        padding-bottom: 0;
+        font-size: 6rem;
+        line-height: 4.5rem;
+    }
+}
+
+@media (min-width: 90rem) {
+    .collection__heading {
+        font-size: 170px;
+        padding-bottom: 1.4rem;
+    }
+}
+
+.collection__heading::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 2.5rem;
+    right: 0;
+    left: 0;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(254, 252, 247, 0.0001)), to(#fefcf7));
+    background-image: linear-gradient(rgba(254, 252, 247, 0.0001) 0%, #fefcf7 100%);
+}
+
+@media (min-width: 48rem) {
+    .collection__heading::after {
+        top: -6rem;
+        bottom: -2rem;
+    }
+}
+
+.button {
+    background-color: #d87d4a;
+}
+
+.button:hover {
+    background-color: transparent;
+    outline: 1px solid #d87d4a;
+}
