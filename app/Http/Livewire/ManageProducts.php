@@ -103,8 +103,8 @@ class ManageProducts extends Component
 
         // Handle temporary storage of images and move them to permanent location
         foreach ($this->images as $image) {
-//            $originalImage = Image::make('http://susenmus.test/storage/' . $image)->encode('jpg', 75); // local
-            $originalImage = Image::make('https://susenmus.kmaa.be/storage/' . $image)->encode('jpg', 75); // production
+            $originalImage = Image::make('http://susenmus.test/storage/' . $image)->encode('jpg', 75); // local
+//            $originalImage = Image::make('https://susenmus.kmaa.be/storage/' . $image)->encode('jpg', 75); // production
             $imagePath = 'products/' . uniqid() . '.jpg'; // Generate a unique filename for each image
 
             Storage::disk('public')->put($imagePath, $originalImage);

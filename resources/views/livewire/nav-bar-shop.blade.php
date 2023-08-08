@@ -1,5 +1,5 @@
 <div>
-    <div class="container mx-auto border-b border-grey-800 px-2">
+    <div class="container mx-auto border-b border-grey-800 px-6">
         <div class="flex items-center justify-between h-24 ">
             <a href="{{ route('homepage') }}"><img class="w-36 h-24" src="/logo.png" alt="Logo"/></a>
             <nav class="text-white">
@@ -59,7 +59,10 @@
                         </x-slot>
                     </x-dropdown>
 
-                    <i class="text-xl cursor-pointer fa-solid fa-heart px-2"></i>
+                    <a href="{{ route('favorite') }}">
+                        <i class="text-xl cursor-pointer fa-solid fa-heart px-2"></i>
+
+                    </a>
 
                     <div class="relative">
                         @if ($orders !== null && $orders->order_lines->count() > 0)

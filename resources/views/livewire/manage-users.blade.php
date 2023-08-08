@@ -11,7 +11,7 @@
         <div class="flex py-3">
             <div class="w-1/3">
                 <div class="relative">
-                    <x-input id="filterName" wire:model.lazy="filterName" type="text" class="w-full py-2 pr-10 pl-4 rounded-lg bg-gray-200 focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Zoek op naam" wire:keydown.enter="render" />
+                    <x-input id="filterName" wire:model.lazy="filterName" type="text" class="w-full py-2 pr-10 pl-4 rounded-lg bg-gray-200 focus:outline-none " placeholder="Zoek op naam" wire:keydown.enter="render" />
                     <span class="absolute right-3 top-2/4 transform -translate-y-2/4 text-gray-500">
                     <i class="fas fa-search"></i>
                     </span>

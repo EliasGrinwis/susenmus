@@ -24,8 +24,8 @@
         {{-- Nagiation --}}
         @livewire('nav-bar-shop')
     </header>
-    <div class="container mx-auto flex items-center justify-between" style="height: 612px;">
-        <div class="child">
+    <div class="container mx-auto flex flex-col md:flex-row items-center justify-between px-6" style="height: 612px;">
+        <div class="child mt-10 md:mt-0 md:w-1/2 text-center md:text-left">
             <h1 class="text-7xl text-white">Welkom bij <br> Sus&amp;Mus</h1>
             <p style="color: #6f7684" class="text-lg py-8">Ontdek de nieuwste trends in mode en stijl, en laat je <br>
                 inspireren door onze unieke collecties.</p>
@@ -33,10 +33,12 @@
                 Nieuwe collectie
             </button>
         </div>
-        <div class="child">
-            <img src="hero.png" alt="Hero image">
+        <div class="child md:w-1/2">
+            <img src="hero.png" alt="Hero image" class="w-full">
         </div>
     </div>
+
+
 </section>
 
 <main>

@@ -2,6 +2,7 @@
 
 use App\Http\Livewire\Contact;
 use App\Http\Livewire\Dashboard;
+use App\Http\Livewire\Favorite;
 use App\Http\Livewire\Homepage;
 use App\Http\Livewire\ManageOrder;
 use App\Http\Livewire\ManageProducts;
@@ -26,6 +27,9 @@ Route::get('/', Homepage::class)->name('homepage');
 Route::get('/contact', Contact::class)->name('contact');
 Route::get('/shop', Shop::class)->name('shop');
 
+Route::middleware(['auth'])->group(function () {
+    Route::get('/favorite', Favorite::class)->name('favorite');
+});
 
 Route::middleware(['auth', 'admin'])->group(function () {
     Route::get('/dashboard', Dashboard::class)->name('dashboard');

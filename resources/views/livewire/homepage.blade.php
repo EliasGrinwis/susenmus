@@ -137,7 +137,7 @@
 
     </style>
     <div class="">
-        <div class="py-56 collection container mx-auto">
+        <div class="py-56 collection container mx-auto px-6">
             <h2 class="collection__heading font-fraunces font-bold">onze collectie</h2>
             <div class="flex flex-col justify-between items-center lg:flex-row lg:gap-5">
                 <article
@@ -226,7 +226,7 @@
             </div>
         </div>
 
-        <div class="article-bg py-56 bg-gradient-to-r from-gray-200 to-gray-100" style="background-color: #f1f1f1">
+        <div class="article-bg py-56 bg-gradient-to-r from-gray-200 to-gray-100 px-6" style="background-color: #f1f1f1">
             <article class="container mx-auto article-test rounded-2xl" style="background-color: #ffffff; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
                 <img
                     class="founder-img rounded-full grayscale"
@@ -250,7 +250,7 @@
             </article>
         </div>
 
-        <div class="py-56">
+        <div class="py-56 px-6">
             <div class="container mx-auto">
                 <h2 class="text-6xl text-center font-bold uppercase tracking-wide mb-10" style="color: #191919">Wat
                     <span class="text-6xl font-bold uppercase tracking-wide" style="color: #d87d4a">klanten</span> over
@@ -279,7 +279,7 @@
            </div>--}}
 
         <footer class="py-12 text-white" style="background-color: #191919">
-            <div class="container mx-auto px-4">
+            <div class="container mx-auto px-6">
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
                     <div>
                         <h2 class="text-2xl font-bold mb-4">Onze locatie</h2>
